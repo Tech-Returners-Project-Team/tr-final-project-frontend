@@ -1,11 +1,11 @@
 import React from "react";
-import { QuizData } from "QuizData";
+import { QuizData } from "./QuizData";
 import "./App.css";
 
 class App extends React.Component {
   state = {
     userAnswer: null,
-    currentQuestion: 1,
+    currentQuestion: 0,
     options: []
   };
 
