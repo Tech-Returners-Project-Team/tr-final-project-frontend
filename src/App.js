@@ -20,6 +20,10 @@ class App extends React.Component {
     });
   };
 
+  componentDidMount() {
+    this.loadQuiz();
+  }
+
   render() {
     return <div className="App"></div>;
   }
