@@ -32,6 +32,7 @@ class App extends React.Component {
   };
 
   componentDidUpdate(prevState) {
+    const { currentQuestion } = this.state;
     if (this.state.currentQuestion !== prevState.currentQuestion) {
       this.setState(() => {
         return {
