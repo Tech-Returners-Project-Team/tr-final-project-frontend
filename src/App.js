@@ -25,7 +25,13 @@ class App extends React.Component {
   }
 
   render() {
-    return <div className="App">{this.state.questions}</div>;
+    const { questions, options } = this.state;
+    return (
+      <div className="App">
+        {this.state.question}
+        {this.state.options}
+      </div>
+    );
   }
 }
 
