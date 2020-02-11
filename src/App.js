@@ -9,6 +9,17 @@ class App extends React.Component {
     options: []
   };
 
+  loadQuiz = () => {
+    const { currentQuestion } = this.state;
+    this.setState(() => {
+      return {
+        questions: QuizData[currentQuestion].question,
+        options: QuizData[currentQuestion].options,
+        answers: QuizData[currentQuestion].answers
+      };
+    });
+  };
+
   render() {
     return <div className="App"></div>;
   }
