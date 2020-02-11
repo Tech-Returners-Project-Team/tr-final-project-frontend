@@ -32,6 +32,7 @@ class App extends React.Component {
         {options.map(option => (
           <p key={option.id}>{option}</p>
         ))}
+        <button onClick={this.nextQuestionHandler}>Next</button>
       </div>
     );
   }
