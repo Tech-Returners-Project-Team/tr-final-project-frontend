@@ -28,8 +28,10 @@ class App extends React.Component {
     const { questions, options } = this.state;
     return (
       <div className="App">
-        {this.state.question}
-        {this.state.options}
+        {questions}
+        {options.map(option => (
+          <p key={option.id}>{option}</p>
+        ))}
       </div>
     );
   }
