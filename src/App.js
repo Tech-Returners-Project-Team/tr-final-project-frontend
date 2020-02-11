@@ -31,6 +31,18 @@ class App extends React.Component {
     console.log(this.state.currentQuestion);
   };
 
+  componentDidUpdate(prevState) {
+    if (this.state.currentQuestion !== prevState.currentQuestion) {
+      this.setState(() => {
+        return {
+          questions: QuizData[currentQuestion].question,
+          options: QuizData[currentQuestion].options,
+          answers: QuizData[currentQuestion].answers
+        };
+      });
+    }
+  }
+
   render() {
     const { questions, options } = this.state;
     return (
