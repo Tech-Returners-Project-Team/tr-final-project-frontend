@@ -24,6 +24,13 @@ class App extends React.Component {
     this.loadQuiz();
   }
 
+  nextQuestionHandler = () => {
+    this.setState({
+      currentQuestion: this.state.currentQuestion + 1
+    });
+    console.log(this.state.currentQuestion);
+  };
+
   render() {
     const { questions, options } = this.state;
     return (
