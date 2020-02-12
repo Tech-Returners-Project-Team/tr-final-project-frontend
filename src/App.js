@@ -122,20 +122,18 @@ class App extends React.Component {
     );
   }
 
+  // this function renders Result
+  renderResult() {
+    return <Result quizResult={this.state.result} />;
+  }
+
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>React Quiz</h2>
+          <h2>Holiday Destination Quiz</h2>
         </div>
-        <Quiz
-          answer={this.state.answer}
-          answerOptions={this.state.answerOptions}
-          questionId={this.state.questionId}
-          question={this.state.question}
-          questionTotal={QuizData.length}
-          onAnswerSelected={this.handleAnswerSelected}
-        />
+        {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
     );
   }
