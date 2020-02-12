@@ -1,5 +1,6 @@
 import React from "react";
 import Question from "/Question";
+import QuestionCount from "/QuestionCounter";
 import AnswerOption from "/AnswerOption";
 
 function Quiz(props) {
@@ -17,6 +18,7 @@ function Quiz(props) {
   }
   return (
     <div key={props.questionId}>
+      <QuestionCount counter={props.questionId} total={props.questionTotal} />
       <Question content={props.question} />
       <ul className="answerOptions">
         {props.answerOptions.map(renderAnswerOptions)}
