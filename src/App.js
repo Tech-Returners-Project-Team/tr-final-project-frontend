@@ -62,6 +62,17 @@ class App extends React.Component {
     }
   }
 
+  //this function sets user answer and answerCount
+  setUserAnswer(answer) {
+    this.setState((state, props) => ({
+      answersCount: {
+        ...state.answersCount,
+        [answer]: (state.answersCount[answer] || 0) + 1
+      },
+      answer: answer
+    }));
+  }
+
   render() {
     return (
       <div className="App">
