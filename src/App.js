@@ -10,11 +10,11 @@ class App extends Component {
     this.state = {
       counter: 0,
       questionId: 1,
-      question: '',
+      question: "",
       answerOptions: [],
-      answer: '',
+      answer: "",
       answersCount: {},
-      result: ''
+      result: ""
     };
 
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
@@ -23,7 +23,7 @@ class App extends Component {
   componentDidMount() {
     // shuffledAnswerOptions will display answers in random order
     const shuffledAnswerOptions = QuizData.map(question =>
-     this.shuffleArray(question.answers)
+      this.shuffleArray(question.answers)
     );
     this.setState({
       question: QuizData[0].question,
@@ -52,13 +52,27 @@ class App extends Component {
     return array;
   }
 
+  handleAnswerSelected(event) {
+    this.setUserAnswer(event.currentTarget.value);
+  }
 
-
-  return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <div className="App-header">
+          <h2>React Quiz</h2>
+        </div>
+        <Quiz
+          answer={this.state.answer}
+          answerOptions={this.state.answerOptions}
+          questionId={this.state.questionId}
+          question={this.state.question}
+          questionTotal={QuizData.length}
+          onAnswerSelected={this.handleAnswerSelected}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
