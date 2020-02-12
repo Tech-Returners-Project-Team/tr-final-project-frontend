@@ -1,6 +1,7 @@
 import React from "react";
 import QuizData from "./components/QuizData";
 import Quiz from "./components/Quiz";
+import Result from "./components/Result";
 import "./App.css";
 
 class App extends React.Component {
@@ -85,6 +86,16 @@ class App extends React.Component {
       answerOptions: QuizData[counter].answers,
       answer: ""
     });
+  }
+
+  // this function will figure out which city gets max result
+  getResults() {
+    const answersCount = this.state.answersCount;
+    const answersCountKeys = Object.keys(answersCount);
+    const answersCountValues = answersCountKeys.map(key => answersCount[key]);
+    const maxAnswerCount = Math.max.apply(null, answersCountValues);
+
+    return answersCountKeys.filter(key => answersCount[key] === maxAnswerCount);
   }
 
   render() {
