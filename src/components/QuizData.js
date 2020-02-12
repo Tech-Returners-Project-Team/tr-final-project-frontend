@@ -31,6 +31,28 @@ const QuizData = [
       { city: "London", option: "drinking tea with the Queen" },
       { city: "Rio de Janeiro", option: "surfing" }
     ]
+  },
+  {
+    question: "Which monument would you like to see?",
+    answers: [
+      { city: "Barcelona", option: "La Sagrada Familia" },
+      { city: "Paris", option: "Tour Eiffel" },
+      { city: "Orlando", option: "Disneyland" },
+      { city: "Agra", option: "Taj Mahal" },
+      { city: "London", option: "Big Ben" },
+      { city: "Rio de Janeiro", option: "Christ the Redeemer" }
+    ]
+  },
+  {
+    question: "Who is your favorite artist?",
+    answers: [
+      { city: "Barcelona", option: "Salvador Dali" },
+      { city: "Paris", option: "Claude Monet" },
+      { city: "Orlando", option: "Walt Disney" },
+      { city: "Agra", option: "Priyanka Chopra" },
+      { city: "London", option: "David Hockney" },
+      { city: "Rio de Janeiro", option: "Street Art" }
+    ]
   }
 ];
 
