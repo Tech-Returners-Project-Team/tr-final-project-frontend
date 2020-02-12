@@ -1,4 +1,4 @@
-export const QuizData = [
+const QuizData = [
   {
     question: "What is your favorite drink?",
     answers: [
@@ -33,3 +33,5 @@ export const QuizData = [
     ]
   }
 ];
+
+export default QuizData;
