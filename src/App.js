@@ -52,8 +52,14 @@ class App extends React.Component {
     return array;
   }
 
+  // this function should set the answer and the next question
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
+    if (this.state.questionId < QuizData.length) {
+      setTimeout(() => this.setNextQuestion(), 300);
+    } else {
+      setTimeout(() => this.setResults(this.getResults()), 300);
+    }
   }
 
   render() {
