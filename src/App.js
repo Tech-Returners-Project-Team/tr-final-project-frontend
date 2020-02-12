@@ -98,6 +98,16 @@ class App extends React.Component {
     return answersCountKeys.filter(key => answersCount[key] === maxAnswerCount);
   }
 
+  // this function will show result
+  // if  there is two or more cities with the same score it will show message --> Try again!
+  setResults(result) {
+    if (result.length === 1) {
+      this.setState({ result: result[0] });
+    } else {
+      this.setState({ result: "Try again!" });
+    }
+  }
+
   render() {
     return (
       <div className="App">
