@@ -3,7 +3,7 @@ import QuizData from "./components/QuizData";
 import Quiz from "./components/Quiz";
 import "./App.css";
 
-class App extends Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
 
