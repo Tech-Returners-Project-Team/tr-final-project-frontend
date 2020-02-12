@@ -1,15 +1,15 @@
 import React from "react";
-import Question from "/Question";
-import QuestionCount from "/QuestionCounter";
-import AnswerOption from "/AnswerOption";
+import Question from "Question";
+import QuestionCount from "QuestionCounter";
+import AnswerOption from "AnswerOption";
 
 function Quiz(props) {
   function renderAnswerOptions(key) {
     return (
       <AnswerOption
         key={key.option}
-        answerContent={key.option}
-        answerType={key.city}
+        answerOption={key.option}
+        answerCity={key.city}
         answer={props.answer}
         questionId={props.questionId}
         onAnswerSelected={props.onAnswerSelected}
