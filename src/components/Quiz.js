@@ -1,7 +1,7 @@
 import React from "react";
-import Question from "Question";
-import QuestionCount from "QuestionCounter";
-import AnswerOption from "AnswerOption";
+import AnswerOption from "./AnswerOption.js";
+import QuestionCount from "./QuestionCounter.js";
+import Question from "./Question.js";
 
 function Quiz(props) {
   function renderAnswerOptions(key) {
