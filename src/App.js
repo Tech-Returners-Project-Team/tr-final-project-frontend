@@ -22,11 +22,11 @@ class App extends Component {
 
   componentDidMount() {
     // shuffledAnswerOptions will display answers in random order
-    const shuffledAnswerOptions = quizQuestions.map(question =>
+    const shuffledAnswerOptions = QuizData.map(question =>
      this.shuffleArray(question.answers)
     );
     this.setState({
-      question: quizQuestions[0].question,
+      question: QuizData[0].question,
       answerOptions: shuffledAnswerOptions[0]
     });
   }
