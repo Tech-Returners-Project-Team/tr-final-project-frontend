@@ -108,6 +108,20 @@ class App extends React.Component {
     }
   }
 
+  //this function renders Quiz
+  renderQuiz() {
+    return (
+      <Quiz
+        answer={this.state.answer}
+        answerOptions={this.state.answerOptions}
+        questionId={this.state.questionId}
+        question={this.state.question}
+        questionTotal={QuizData.length}
+        onAnswerSelected={this.handleAnswerSelected}
+      />
+    );
+  }
+
   render() {
     return (
       <div className="App">
