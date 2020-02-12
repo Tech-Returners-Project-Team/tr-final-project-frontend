@@ -73,6 +73,20 @@ class App extends React.Component {
     }));
   }
 
+  //this function sets next question and updates state
+  setNextQuestion() {
+    const counter = this.state.counter + 1;
+    const questionId = this.state.questionId + 1;
+
+    this.setState({
+      counter: counter,
+      questionId: questionId,
+      question: QuizData[counter].question,
+      answerOptions: QuizData[counter].answers,
+      answer: ""
+    });
+  }
+
   render() {
     return (
       <div className="App">
