@@ -5,7 +5,6 @@ function Result(props) {
     <div>
       Your perfect holiday destination is{" "}
       <strong>{props.quizResult.title}</strong>!
-      <img src={props.quizResult.picture} />
     </div>
   );
 }

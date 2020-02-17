@@ -9,7 +9,7 @@ function Quiz(props) {
       <AnswerOption
         key={key.option}
         answerOption={key.option}
-        answerCity={key.city}
+        answerCity={key.city_key}
         answer={props.answer}
         questionId={props.questionId}
         onAnswerSelected={props.onAnswerSelected}
