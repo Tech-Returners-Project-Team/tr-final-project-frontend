@@ -101,6 +101,13 @@ class App extends React.Component {
   // this function will show result
   // if  there is two or more cities with the same score it will show message --> Try again!
   setResults(result) {
+    console.log(result); // "rio_da_janeiro"
+    // city: Rio de Janeiro, city_key: rio_de_janeiro
+    // destinations/rio_de_janeiro
+    // make axios request to fetch the result
+    // then
+    // set the state with the response data (response.data)
+    // { id: 3, city: "Rio de Janeiro", img_url: "https://abc.com/k.jpg",... }
     if (result.length === 1) {
       this.setState({ result: result[0] });
     } else {

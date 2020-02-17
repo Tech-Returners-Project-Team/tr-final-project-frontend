@@ -2,56 +2,56 @@ const QuizData = [
   {
     question: "What is your favorite drink?",
     answers: [
-      { city: "Barcelona", option: "sangria" },
-      { city: "Paris", option: "red wine" },
-      { city: "Orlando", option: "Coca cola" },
-      { city: "Agra", option: "mango lassi" },
-      { city: "London", option: "gin" },
-      { city: "Rio de Janeiro", option: "caipirinha" }
+      { city_key: "barcelona", option: "sangria" },
+      { city_key: "paris", option: "red wine" },
+      { city_key: "orlando", option: "Coca cola" },
+      { city_key: "agra", option: "mango lassi" },
+      { city_key: "london", option: "gin" },
+      { city_key: "rio_de_janeiro", option: "caipirinha" }
     ]
   },
   {
     question: "What is your favorite movie?",
     answers: [
-      { city: "Barcelona", option: "Vicky Cristina Barcelona" },
-      { city: "Paris", option: "Amelie" },
-      { city: "Orlando", option: "Disney films" },
-      { city: "Agra", option: "Bollywood" },
-      { city: "London", option: "James Bond movies" },
-      { city: "Rio de Janeiro", option: "Cidade de Deus" }
+      { city_key: "barcelona", option: "Vicky Cristina Barcelona" },
+      { city_key: "paris", option: "Amelie" },
+      { city_key: "orlando", option: "Disney films" },
+      { city_key: "agra", option: "Bollywood" },
+      { city_key: "london", option: "James Bond movies" },
+      { city_key: "rio_de_janeiro", option: "Cidade de Deus" }
     ]
   },
   {
     question: "What is your favorite activity?",
     answers: [
-      { city: "Barcelona", option: "sunbathing" },
-      { city: "Paris", option: "falling in love" },
-      { city: "Orlando", option: "Disneyland" },
-      { city: "Agra", option: "yoga" },
-      { city: "London", option: "drinking tea with the Queen" },
-      { city: "Rio de Janeiro", option: "surfing" }
+      { city_key: "barcelona", option: "sunbathing" },
+      { city_key: "paris", option: "falling in love" },
+      { city_key: "orlando", option: "Disneyland" },
+      { city_key: "agra", option: "yoga" },
+      { city_key: "london", option: "drinking tea with the Queen" },
+      { city_key: "rio_de_janeiro", option: "surfing" }
     ]
   },
   {
     question: "Which monument would you like to see?",
     answers: [
-      { city: "Barcelona", option: "La Sagrada Familia" },
-      { city: "Paris", option: "Tour Eiffel" },
-      { city: "Orlando", option: "Disneyland" },
-      { city: "Agra", option: "Taj Mahal" },
-      { city: "London", option: "Big Ben" },
-      { city: "Rio de Janeiro", option: "Christ the Redeemer" }
+      { city_key: "Barcelona", option: "La Sagrada Familia" },
+      { city_key: "paris", option: "Tour Eiffel" },
+      { city_key: "orlando", option: "Disneyland" },
+      { city_key: "agra", option: "Taj Mahal" },
+      { city_key: "london", option: "Big Ben" },
+      { city_key: "rio_de_janeiro", option: "Christ the Redeemer" }
     ]
   },
   {
     question: "Who is your favorite artist?",
     answers: [
-      { city: "Barcelona", option: "Salvador Dali" },
-      { city: "Paris", option: "Claude Monet" },
-      { city: "Orlando", option: "Walt Disney" },
-      { city: "Agra", option: "Priyanka Chopra" },
-      { city: "London", option: "David Hockney" },
-      { city: "Rio de Janeiro", option: "Street Art" }
+      { city_key: "barcelona", option: "Salvador Dali" },
+      { city_key: "paris", option: "Claude Monet" },
+      { city_key: "orlando", option: "Walt Disney" },
+      { city_key: "agra", option: "Priyanka Chopra" },
+      { city_key: "london", option: "David Hockney" },
+      { city_key: "rio_de_janeiro", option: "Street Art" }
     ]
   }
 ];
