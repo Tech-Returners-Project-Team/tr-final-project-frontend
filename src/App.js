@@ -115,14 +115,12 @@ class App extends React.Component {
         `https://9b6xx7v56d.execute-api.us-east-1.amazonaws.com/dev/destinations/${result[0]}`
       )
       .then(response => {
-        const resULT = response.data.city;
+        const cityValue = response.data[0];
         console.log(response);
-        console.log(resULT);
-        //if (result.length === 1) {
+        console.log(cityValue);
         this.setState({
-          result: resULT
+          result: cityValue
         });
-        // }
       })
       .catch(err => {
         console.log(err);
