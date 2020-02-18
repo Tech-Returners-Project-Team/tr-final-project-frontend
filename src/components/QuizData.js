@@ -35,7 +35,7 @@ const QuizData = [
   {
     question: "Which monument would you like to see?",
     answers: [
-      { city_key: "Barcelona", option: "La Sagrada Familia" },
+      { city_key: "barcelona", option: "La Sagrada Familia" },
       { city_key: "paris", option: "Tour Eiffel" },
       { city_key: "orlando", option: "Disneyland" },
       { city_key: "agra", option: "Taj Mahal" },

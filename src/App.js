@@ -2,7 +2,7 @@ import React from "react";
 import QuizData from "./components/QuizData";
 import Quiz from "./components/Quiz";
 import Result from "./components/Result";
-//import axios from "axios";
+import axios from "axios";
 import "./App.css";
 
 class App extends React.Component {
@@ -110,34 +110,30 @@ class App extends React.Component {
     // set the state with the response data (response.data)
     // { id: 3, city: "Rio de Janeiro", img_url: "https://abc.com/k.jpg",... }
 
-    if (result.length === 1) {
-      this.setState({ result: result[0] });
-    } else {
-      this.setState({ result: "Try again!" });
-    }
-    //axios
-     // .get(
-      //  `https://9b6xx7v56d.execute-api.us-east-1.amazonaws.com/dev/destinations/${result[0]}`
-     // )
-     // .then(response => {
-        //const resULT = response.data.city_key;
-       // console.log(response);
+    axios
+      .get(
+        `https://9b6xx7v56d.execute-api.us-east-1.amazonaws.com/dev/destinations/${result[0]}`
+      )
+      .then(response => {
+        const resULT = response.data.city;
+        console.log(response);
+        console.log(resULT);
         //if (result.length === 1) {
-        //this.setState({
-        // result: resULT
-        //});
+        this.setState({
+          result: resULT
+        });
         // }
-        //})
-        // .catch(err => {
-        //console.log(err);
-        // });
+      })
+      .catch(err => {
+        console.log(err);
+      });
 
-        // if (result.length === 1) {
-        //   this.setState({ result: result[0] });
-        // } else {
-        //   this.setState({ result: "Try again!" });
-        // }
-      //});
+    // if (result.length === 1) {
+    //   this.setState({ result: result[0] });
+    // } else {
+    //   this.setState({ result: "Try again!" });
+    // }
+    //});
   }
 
   //this function renders Quiz
