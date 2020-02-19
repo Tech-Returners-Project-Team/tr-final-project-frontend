@@ -101,6 +101,7 @@ class App extends React.Component {
 
   // this function will show result
   // if  there is two or more cities with the same score it will show message --> Try again!
+
   setResults(result) {
     console.log(result); // "rio_da_janeiro"
     // city: Rio de Janeiro, city_key: rio_de_janeiro
