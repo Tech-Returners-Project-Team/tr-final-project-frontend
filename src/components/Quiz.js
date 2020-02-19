@@ -22,7 +22,7 @@ function Quiz(props) {
     <div class= "container" key={props.questionId}>
       <QuestionCount counter={props.questionId} total={props.questionTotal} />
       <Question content={props.question} />
-      < div className="answerOptions">
+      < div class=" btn-grid">
         {props.answerOptions.map(renderAnswerOptions)}
       </ div>
     </div>

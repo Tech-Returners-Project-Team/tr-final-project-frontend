@@ -3,9 +3,9 @@ import React from "react";
 
 function AnswerOption(props) {
   return (
-    <div class ="container" className="answerOption">
+    <div className="answerOption">
       <input
-        type="button"
+        type="radio"
         checked={props.answerCity === props.answer}
         id={props.answerCity}
         value={props.answerCity}

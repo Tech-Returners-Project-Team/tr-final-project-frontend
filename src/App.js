@@ -152,13 +152,15 @@ class App extends React.Component {
   // this function renders Result
   renderResult() {
     return <Result quizResult={this.state.result} />;
+    
+    
   }
 
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <h1>Where will this app get you today?</h1>
+          <h1>Where will this app take you today?</h1>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
