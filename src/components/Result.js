@@ -3,7 +3,6 @@ import React from "react";
 function Result(props) {
   return (
     <div>
-      {/*Your perfect holiday destination is {props.quizResult}*/}
       Luck is on your side! Your perfect holiday destination is{" "}
       <strong>{props.quizResult.city}</strong>
       <div></div>
