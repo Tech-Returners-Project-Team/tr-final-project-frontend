@@ -2,6 +2,8 @@ import React from "react";
 import AnswerOption from "./AnswerOption.js";
 import QuestionCount from "./QuestionCounter.js";
 import Question from "./Question.js";
+import "../Style.css";
+
 
 function Quiz(props) {
   function renderAnswerOptions(key) {
@@ -17,12 +19,12 @@ function Quiz(props) {
     );
   }
   return (
-    <div key={props.questionId}>
+    <div class= "container" key={props.questionId}>
       <QuestionCount counter={props.questionId} total={props.questionTotal} />
       <Question content={props.question} />
-      <ul className="answerOptions">
+      < div className="answerOptions">
         {props.answerOptions.map(renderAnswerOptions)}
-      </ul>
+      </ div>
     </div>
   );
 }

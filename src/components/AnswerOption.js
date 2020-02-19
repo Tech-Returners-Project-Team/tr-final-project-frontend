@@ -1,22 +1,21 @@
 import React from "react";
 
+
 function AnswerOption(props) {
   return (
-    <li className="answerOption">
+    <div class ="container" className="answerOption">
       <input
-        type="radio"
-        className="radioCustomButton"
-        name="radioGroup"
+        type="button"
         checked={props.answerCity === props.answer}
         id={props.answerCity}
         value={props.answerCity}
         disabled={props.answer}
         onChange={props.onAnswerSelected}
       />
-      <label className="radioCustomLabel" htmlFor={props.answerCity}>
+      <label class="btn" htmlFor={props.answerCity}>
         {props.answerOption}
       </label>
-    </li>
+    </div>
   );
 }
 export default AnswerOption;
