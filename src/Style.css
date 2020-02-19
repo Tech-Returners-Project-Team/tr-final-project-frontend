@@ -68,11 +68,15 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("./components/Images/whitetexture.jpg");
+  background-image: url("./components/Images/compass.gif");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 10%;
 }
 .container {
   width: 800px;
   max-width: 80%;
+  background-image: url("./components/Images/whitetexture.jpg");
   background-color: white;
   border-radius: 5px;
   padding: 10px;

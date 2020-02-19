@@ -158,7 +158,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Where will this app get you today?</h2>
+          <h1>Where will this app get you today?</h1>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
