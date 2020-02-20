@@ -1,20 +1,16 @@
 .resultstyle {
-    width: 800px;
+    /* width: 1000px; */
     max-width: 80%;
     /* background-image: url("./components/Images/whitetexture.jpg"); */
     background-color: gold;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
-    font-size: 50px;
+    font-size: 5px;
     
 }
 
 p {
-    size: 25%;
+    size: 75%;
 }
 
-.pic {
-
-    size: 25%;
-}

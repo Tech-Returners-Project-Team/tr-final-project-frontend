@@ -15,7 +15,8 @@
 }
 
 .App-header {
-  background-color:blue;
+  /* background-color: rgb(128, 203, 233); */
+  /* background-image: url("./components/Images/water.jpg"); */
   margin-top: 0px;
   border-radius: 10px;
   margin-left: 0px;
@@ -25,7 +26,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:#3254F4;
   margin-bottom: 70px;
   
 }

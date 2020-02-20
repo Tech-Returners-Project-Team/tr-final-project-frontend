@@ -3,7 +3,7 @@ import React from "react";
 
 function AnswerOption(props) {
   return (
-    <div className="answerOption">
+    <div class="container-ans">
       <input
         type="radio"
         checked={props.answerCity === props.answer}

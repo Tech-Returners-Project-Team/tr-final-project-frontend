@@ -3,19 +3,21 @@ import "../Result.css";
 
 function Result(props) {
   return (
-    <div class="resultstyle">
+    <div>
       Luck is on your side! Your perfect holiday destination is {" "}
       <strong>{props.quizResult.city}</strong>
       <div></div>
-      <div class= "pic">
+      <div>
       <img
         src={props.quizResult.picture}
         alt="resultDestination"
         title="city"
         className="destinationPicture"
+        width="500px"
+        height="300px"
       />
       </div>
-      <p class="container">
+      <p>
         If you want to book it, take a look here:
         <a href={props.quizResult.booking_link}>
           <img
