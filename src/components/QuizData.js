@@ -26,7 +26,7 @@ const QuizData = [
     answers: [
       { city_key: "barcelona", option: "sunbathing" },
       { city_key: "paris", option: "falling in love" },
-      { city_key: "orlando", option: "Disneyland" },
+      { city_key: "orlando", option: "roller coasters" },
       { city_key: "agra", option: "yoga" },
       { city_key: "london", option: "drinking tea with the Queen" },
       { city_key: "rio_de_janeiro", option: "surfing" }
