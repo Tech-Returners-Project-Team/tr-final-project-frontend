@@ -159,6 +159,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1> Tripspiration</h1>
         <div className="App-header">
           <h1>Where will our app take you today?</h1>
         </div>
