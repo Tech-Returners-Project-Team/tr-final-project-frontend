@@ -1,7 +1,7 @@
 
  *, *::before, *::after {
   box-sizing: border-box;
-  font-family: Gotham Rounded;
+  /* font-family: Gotham Rounded; */
 }
 
 body {
@@ -13,11 +13,11 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("./components/Images/compass.gif");
+  background-image: url("./components/Images/three.gif"), url("./components/Images/travel.gif");
   background-color: white;
   background-repeat: no-repeat;
-  background-size: 25%;
-  background-position: left-top;
+  background-size: 25% 20%;
+  background-position: bottom 10px right, top 10px left;
 }
 .container {
   width: 900px;
@@ -35,14 +35,14 @@ body {
     color:black;
   }
   .question{
-    background-color: #0077cc;
+    background-color:#3254F4;
     color: white;
+    display: inline;
   }
   
 .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  
   gap: 10px;
   margin: 70px 0;
 }
@@ -67,8 +67,4 @@ body {
 }
 .container-ans {
   background-color: whitesmoke;
-  
-  /* border-radius: 5px;
-  padding: 3px;  */
-  
-  }
+}

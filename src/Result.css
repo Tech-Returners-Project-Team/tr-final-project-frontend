@@ -16,6 +16,6 @@
 p {
     font-size:30px;
 }
-h1.hidden {
-    display: none;
+h1 {
+   @include invisible(hidden);
   }

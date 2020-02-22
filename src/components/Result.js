@@ -5,20 +5,20 @@ function Result(props) {
   return (
     <div class="resultstyle">
       <h3>
-      Luck is on your side! Your perfect holiday destination is {"  "}
-      <br />
-      <strong>{props.quizResult.city}</strong>
+        Luck is on your side! Your perfect holiday destination is {"  "}
+        <br />
+        <strong>{props.quizResult.city}</strong>
       </h3>
-      
+
       <div>
-      <img
-        src={props.quizResult.picture}
-        alt="resultDestination"
-        title="city"
-        className="destinationPicture"
-        width="500px"
-        height="300px"
-      />
+        <img
+          src={props.quizResult.picture}
+          alt="resultDestination"
+          title="city"
+          className="destinationPicture"
+          width="500px"
+          height="300px"
+        />
       </div>
       <p>
         <br />

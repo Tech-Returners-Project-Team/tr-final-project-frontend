@@ -1,11 +1,9 @@
 .App {
   text-align: center;
   font-size: calc(10px + 2vmin);
-  padding: 0px;
+  
   color: palevioletred;
-  background-image: linear-gradient(orange red);
-}
-
+  }
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,6 +22,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-family: OCR A Std, cursive;
   color:#3254F4;
   margin-bottom: 50px;
   
