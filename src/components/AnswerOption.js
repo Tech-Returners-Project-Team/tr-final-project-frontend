@@ -5,7 +5,7 @@ function AnswerOption(props) {
   return (
     <div class="container-ans">
       <input
-        type="radio"
+        type="radio" hidden
         checked={props.answerCity === props.answer}
         id={props.answerCity}
         value={props.answerCity}

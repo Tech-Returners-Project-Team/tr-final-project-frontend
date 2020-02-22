@@ -3,10 +3,13 @@ import "../Result.css";
 
 function Result(props) {
   return (
-    <div>
-      Luck is on your side! Your perfect holiday destination is {" "}
+    <div class="resultstyle">
+      <h3>
+      Luck is on your side! Your perfect holiday destination is {"  "}
+      <br />
       <strong>{props.quizResult.city}</strong>
-      <div></div>
+      </h3>
+      
       <div>
       <img
         src={props.quizResult.picture}
@@ -18,7 +21,9 @@ function Result(props) {
       />
       </div>
       <p>
-        If you want to book it, take a look here:
+        <br />
+        To book your holiday, take a look here:
+        <br />
         <a href={props.quizResult.booking_link}>
           <img
             alt="bookingLink"
