@@ -17,7 +17,7 @@ body {
   background-color: white;
   background-repeat: no-repeat;
   background-size: 25% 20%;
-  background-position: bottom 10px right, top 10px left;
+  background-position: bottom 10px right 10px, top 10px left;
 }
 .container {
   width: 900px;
@@ -28,18 +28,18 @@ body {
   padding: 30px;
   box-shadow: 0 0 10px 2px;
   font-size: 50px;
-  font-variant-caps: all-small-caps;
-  }
+}
+  
   #size {
     font-size: 25px;
     margin-bottom: 2%;
     color:black;
-  }
+}
   .question{
     background-color:#3254F4;
     color: white;
     display: inline;
-  }
+}
   
 .btn-grid {
   display: grid;
@@ -58,6 +58,7 @@ body {
   color: black;
   font-size: 30px;
   outline: none;
+  font-variant-caps:normal;
 }
 
 
