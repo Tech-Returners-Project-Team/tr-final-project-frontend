@@ -28,6 +28,7 @@ body {
   padding: 30px;
   box-shadow: 0 0 10px 2px;
   font-size: 50px;
+  font-variant-caps: all-small-caps;
   }
   #size {
     font-size: 25px;
