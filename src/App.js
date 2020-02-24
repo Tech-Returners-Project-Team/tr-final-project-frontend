@@ -23,7 +23,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // shuffledAnswerOptions will display answers in random order
     const shuffledAnswerOptions = QuizData.map(question =>
       this.shuffleArray(question.answers)
     );
@@ -33,28 +32,20 @@ class App extends React.Component {
     });
   }
 
-  // shuffledArray function
   shuffleArray(array) {
     var currentIndex = array.length,
       temporaryValue,
       randomIndex;
-
-    // While there remain elements to shuffle...
     while (0 !== currentIndex) {
-      // Pick a remaining element...
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
-
-      // And swap it with the current element.
       temporaryValue = array[currentIndex];
       array[currentIndex] = array[randomIndex];
       array[randomIndex] = temporaryValue;
     }
-
     return array;
   }
 
-  // this function should set the answer and the next question
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
     if (this.state.questionId < QuizData.length) {
@@ -64,7 +55,6 @@ class App extends React.Component {
     }
   }
 
-  //this function sets user answer and answerCount
   setUserAnswer(answer) {
     this.setState((state, props) => ({
       answersCount: {
@@ -75,7 +65,6 @@ class App extends React.Component {
     }));
   }
 
-  //this function sets next question and updates state
   setNextQuestion() {
     const counter = this.state.counter + 1;
     const questionId = this.state.questionId + 1;
@@ -89,7 +78,6 @@ class App extends React.Component {
     });
   }
 
-  // this function will figure out which city gets max result
   getResults() {
     const answersCount = this.state.answersCount;
     const answersCountKeys = Object.keys(answersCount);
@@ -99,18 +87,7 @@ class App extends React.Component {
     return answersCountKeys.filter(key => answersCount[key] === maxAnswerCount);
   }
 
-  // this function will show result
-  // if  there is two or more cities with the same score it will show message --> Try again!
-
   setResults(result) {
-    console.log(result); // "rio_da_janeiro"
-    // city: Rio de Janeiro, city_key: rio_de_janeiro
-    // destinations/rio_de_janeiro
-    // make axios request to fetch the result
-    // then
-    // set the state with the response data (response.data)
-    // { id: 3, city: "Rio de Janeiro", img_url: "https://abc.com/k.jpg",... }
-
     axios
       .get(
         `https://9b6xx7v56d.execute-api.us-east-1.amazonaws.com/dev/destinations/${result[0]}`
@@ -126,16 +103,8 @@ class App extends React.Component {
       .catch(err => {
         console.log(err);
       });
-
-    // if (result.length === 1) {
-    //   this.setState({ result: result[0] });
-    // } else {
-    //   this.setState({ result: "Try again!" });
-    // }
-    //});
   }
 
-  //this function renders Quiz
   renderQuiz() {
     return (
       <Quiz
@@ -149,11 +118,8 @@ class App extends React.Component {
     );
   }
 
-  // this function renders Result
   renderResult() {
     return <Result quizResult={this.state.result} />;
-    
-    
   }
 
   render() {
