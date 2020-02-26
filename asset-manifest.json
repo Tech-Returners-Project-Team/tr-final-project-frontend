@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Tech-Returners-Project-Team/tr-final-project-frontend/static/css/main.199981d4.chunk.css",
+    "main.js": "/Tech-Returners-Project-Team/tr-final-project-frontend/static/js/main.1ea07faa.chunk.js",
+    "main.js.map": "/Tech-Returners-Project-Team/tr-final-project-frontend/static/js/main.1ea07faa.chunk.js.map",
+    "runtime-main.js": "/Tech-Returners-Project-Team/tr-final-project-frontend/static/js/runtime-main.37fa6474.js",
+    "runtime-main.js.map": "/Tech-Returners-Project-Team/tr-final-project-frontend/static/js/runtime-main.37fa6474.js.map",
+    "static/js/2.3f4938c1.chunk.js": "/Tech-Returners-Project-Team/tr-final-project-frontend/static/js/2.3f4938c1.chunk.js",
+    "static/js/2.3f4938c1.chunk.js.map": "/Tech-Returners-Project-Team/tr-final-project-frontend/static/js/2.3f4938c1.chunk.js.map",
+    "index.html": "/Tech-Returners-Project-Team/tr-final-project-frontend/index.html",
+    "precache-manifest.c39b43a2779f21428f1264ddbcbbdd55.js": "/Tech-Returners-Project-Team/tr-final-project-frontend/precache-manifest.c39b43a2779f21428f1264ddbcbbdd55.js",
+    "service-worker.js": "/Tech-Returners-Project-Team/tr-final-project-frontend/service-worker.js",
+    "static/css/main.199981d4.chunk.css.map": "/Tech-Returners-Project-Team/tr-final-project-frontend/static/css/main.199981d4.chunk.css.map",
+    "static/js/2.3f4938c1.chunk.js.LICENSE.txt": "/Tech-Returners-Project-Team/tr-final-project-frontend/static/js/2.3f4938c1.chunk.js.LICENSE.txt",
+    "static/media/Style.css": "/Tech-Returners-Project-Team/tr-final-project-frontend/static/media/travel.a0b84493.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37fa6474.js",
+    "static/js/2.3f4938c1.chunk.js",
+    "static/css/main.199981d4.chunk.css",
+    "static/js/main.1ea07faa.chunk.js"
+  ]
+}
